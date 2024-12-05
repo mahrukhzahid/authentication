@@ -1,0 +1,92 @@
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sidebar .logo-container {
+    background-color: #ffffff; /* Background color for the logo section */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar .logo-container img {
+    max-width: 100px; /* Adjust logo size */
+    height: auto;
+  }
+  
+  /* Sidebar Links */
+  .sidebar .link {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar .link:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+  }
+  
+  .sidebar .link i {
+    margin-right: 10px;
+  }
+  
+  .sidebar .active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Bottom Navbar */
+  .bottom-navbar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .bottom-navbar i {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .bottom-navbar i:hover {
+    color: #007bff;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Sidebar hides on smaller screens */
+    }
+  
+    .bottom-navbar {
+      display: flex; /* Bottom navbar becomes visible */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .bottom-navbar {
+      display: none; /* Bottom navbar hides on larger screens */
+    }
+  
+    .sidebar {
+      display: block; /* Sidebar is visible */
+    }
+  }
+  
